@@ -6,6 +6,18 @@ import { Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/auth")({
   component: AuthPage,
+  head: () => ({
+    meta: [
+      { title: "Sign in to Skillens — Access Your Resume Analyses" },
+      { name: "description", content: "Sign in or create your free Skillens account to run AI resume analyses, track improvements, and share reports with your career coach." },
+      { property: "og:title", content: "Sign in to Skillens" },
+      { property: "og:description", content: "Sign in or create your free Skillens account to run AI resume analyses." },
+      { property: "og:url", content: "https://skill-pathfinder-278.lovable.app/auth" },
+      { property: "og:type", content: "website" },
+      { name: "robots", content: "noindex" },
+    ],
+    links: [{ rel: "canonical", href: "https://skill-pathfinder-278.lovable.app/auth" }],
+  }),
 });
 
 function AuthPage() {

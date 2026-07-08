@@ -56,8 +56,8 @@ function LibraryPage() {
             <div key={j.id} className="flex flex-col rounded-2xl border border-border bg-card p-5">
               <div className="flex items-start justify-between gap-2">
                 <div className="font-semibold">{j.name}</div>
-                <button onClick={() => del.mutate(j.id)} className="text-muted-foreground hover:text-destructive">
-                  <Trash2 className="size-4" />
+                <button onClick={() => del.mutate(j.id)} aria-label={`Delete job description ${j.name}`} className="text-muted-foreground hover:text-destructive">
+                  <Trash2 className="size-4" aria-hidden="true" />
                 </button>
               </div>
               <div className="mt-1 text-xs text-muted-foreground">
@@ -91,7 +91,7 @@ function AddModal({ onClose, onSave, busy }: { onClose: () => void; onSave: (v: 
             <h2 className="font-display text-xl font-bold">Add New JD</h2>
             <p className="text-sm text-muted-foreground">Save a JD to reuse across resume revisions.</p>
           </div>
-          <button onClick={onClose} className="text-muted-foreground hover:text-foreground"><X className="size-5" /></button>
+          <button onClick={onClose} aria-label="Close add JD dialog" className="text-muted-foreground hover:text-foreground"><X className="size-5" aria-hidden="true" /></button>
         </div>
         <div className="mt-5 space-y-4">
           <div>

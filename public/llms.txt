@@ -1,0 +1,9 @@
+# Skillens
+
+> AI-powered resume vs. job description analyzer with ATS scoring, missing-skill detection, and improvement tracking.
+
+Skillens scores any resume against any job description using real AI (no simulation). Users get an ATS-style score, matched/missing skills, keyword coverage, and tailored suggestions. Results can be re-run on updated resumes to track score improvements, and shared read-only with career coaches via revocable links.
+
+## Pages
+
+- [Home](/): Product overview and how Skillens analyzes resumes against job descriptions.

@@ -43,10 +43,11 @@ export function Nav() {
               <NavLink to="/library">Library</NavLink>
               <button
                 onClick={signOut}
+                aria-label={email ? `Sign out of ${email}` : "Sign out"}
                 className="ml-2 inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-muted-foreground hover:bg-muted hover:text-foreground"
                 title={email}
               >
-                <LogOut className="size-4" /> Sign out
+                <LogOut className="size-4" aria-hidden="true" /> Sign out
               </button>
             </>
           ) : (

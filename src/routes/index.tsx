@@ -4,6 +4,17 @@ import { CheckCircle2, Gauge, Library, Share2, Sparkles, TrendingUp } from "luci
 
 export const Route = createFileRoute("/")({
   component: Landing,
+  head: () => ({
+    meta: [
+      { title: "Skillens — AI Resume + JD Analyzer with ATS Scoring" },
+      { name: "description", content: "Score your resume against any job description with real AI. Get ATS keywords, missing skills, tailored suggestions, and track improvements over time." },
+      { property: "og:title", content: "Skillens — AI Resume + JD Analyzer with ATS Scoring" },
+      { property: "og:description", content: "Score your resume against any JD in seconds. ATS keywords, missing skills, and tailored suggestions — powered by real AI." },
+      { property: "og:url", content: "https://skill-pathfinder-278.lovable.app/" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [{ rel: "canonical", href: "https://skill-pathfinder-278.lovable.app/" }],
+  }),
 });
 
 function Landing() {
