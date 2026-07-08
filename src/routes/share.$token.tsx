@@ -7,6 +7,18 @@ import { Check, X, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/share/$token")({
   component: SharePage,
+  head: ({ params }) => ({
+    meta: [
+      { title: "Shared Resume Analysis — Skillens" },
+      { name: "description", content: "A read-only Skillens resume vs. job description analysis: ATS keywords, matched and missing skills, and tailored suggestions." },
+      { property: "og:title", content: "Shared Resume Analysis — Skillens" },
+      { property: "og:description", content: "View a shared read-only resume ↔ JD analysis on Skillens." },
+      { property: "og:url", content: `https://skill-pathfinder-278.lovable.app/share/${params.token}` },
+      { property: "og:type", content: "article" },
+      { name: "robots", content: "noindex" },
+    ],
+    links: [{ rel: "canonical", href: `https://skill-pathfinder-278.lovable.app/share/${params.token}` }],
+  }),
 });
 
 function SharePage() {

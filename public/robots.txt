@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /auth
+Disallow: /share/
+Disallow: /dashboard
+Disallow: /analyze
+Disallow: /library
+Disallow: /results/
+
+Sitemap: https://skill-pathfinder-278.lovable.app/sitemap.xml
